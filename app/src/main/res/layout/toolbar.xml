@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbar">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:id="@+id/cartcount"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:layout_width="27sp"
+            android:id="@+id/location"
+            android:layout_height="27sp"
+            android:padding="@dimen/_1sdp"
+            app:srcCompat="@drawable/ic_location_on_black_24dp"
+            android:tint="@color/yellow"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:layout_width="27sp"
+             android:id="@+id/notification"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_height="27sp"
+            android:padding="@dimen/_1sdp"
+             app:srcCompat="@drawable/notification"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:layout_width="27sp"
+            android:id="@+id/faverate"
+            android:layout_height="27sp"
+            android:padding="@dimen/_1sdp"
+            app:srcCompat="@drawable/ic_favorite_black_24dp"
+            android:tint="@color/white"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

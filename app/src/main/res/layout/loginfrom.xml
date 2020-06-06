@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+              android:background="@drawable/rect">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/other"
+                 android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/back_bg"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="@dimen/_1sdp"/>
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                 android:id="@+id/student"
+    android:layout_marginTop="@dimen/_15sdp"
+                 android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/back_bg"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="@dimen/_1sdp"/>
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="School"
+                    android:id="@+id/school"
+    android:layout_marginTop="@dimen/_15sdp"
+                 android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/back_bg"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="@dimen/_1sdp"/>
+
+<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:id="@+id/devolopment"
+                android:text="Bysubess Devekionebt Execytuve"
+    android:layout_marginTop="@dimen/_15sdp"
+                 android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/back_bg"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="invisible"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="@dimen/_1sdp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0e6ea3a6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2bc6c7c6"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="BallPulseIndicator"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="98dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#0e6ea3a6">
+
+&lt;!&ndash;
+    <RelativeLayout
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+         android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ProgressBar
+            android:indeterminateDrawable="@drawable/progess_effect"
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"/>
+
+
+
+    </RelativeLayout>
+&ndash;&gt;
+
+    <RelativeLayout
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/rectloa"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ProgressBar
+            android:indeterminateDrawable="@drawable/progess_effect"
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>-->

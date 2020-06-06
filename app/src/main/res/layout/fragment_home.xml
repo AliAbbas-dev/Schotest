@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard.ui.ServiceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backnavi">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+              <LinearLayout
+                  android:id="@+id/img_lay"
+                  android:gravity="center"
+                  android:layout_marginTop="@dimen/_40sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <de.hdodenhof.circleimageview.CircleImageView
+                      android:layout_width="@dimen/_150sdp"
+                      android:layout_height="@dimen/_150sdp"
+                      android:src="@drawable/rnd_logo"
+                      android:background="@drawable/whitecircle"
+                      android:padding="@dimen/_10sdp">
+
+                  </de.hdodenhof.circleimageview.CircleImageView>
+              </LinearLayout>
+              <LinearLayout
+                  android:orientation="vertical"
+                  android:id="@+id/layout"
+                  android:layout_below="@id/img_lay"
+                  android:gravity="center"
+                  android:layout_margin="@dimen/_10sdp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="Find Best School Around You."
+                      android:textColor="@color/yellow"
+                      android:textStyle="bold"
+                      android:textSize="@dimen/_30sdp"
+                      android:fontFamily="sans-serif"
+                      android:gravity="center"/>
+
+                  <EditText
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="Search..."
+                      android:background="@drawable/edtwhitebtn"
+                      android:layout_margin="20dp"
+                      android:padding="15dp"
+                      android:drawableRight="@drawable/ic_search_black_24dp"/>
+
+              </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

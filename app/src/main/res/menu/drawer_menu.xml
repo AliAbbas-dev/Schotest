@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_24dp">
+        </item>
+
+        <item
+            android:id="@+id/NewRequest"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Book a Trip">
+        </item>
+
+        <item
+            android:id="@+id/Completed"
+            android:title="My Trips"
+            android:icon="@drawable/ic_home_black_24dp">
+        </item>
+
+        <item
+            android:title="Denied Request"
+            android:id="@+id/Denied"
+            android:icon="@drawable/ic_home_black_24dp">
+        </item>
+
+        <item
+            android:title="Cancelled"
+            android:icon="@drawable/ic_cancel_black_24dp"
+            android:id="@+id/Cancelled">
+        </item>
+
+        <item
+            android:title="Your money"
+            android:id="@+id/wallet_money"
+            android:icon="@drawable/ic_home_black_24dp">
+        </item>
+
+        <item
+            android:title="About Us"
+            android:id="@+id/aboutus"
+            android:icon="@drawable/ic_home_black_24dp">
+        </item>
+
+        <item
+            android:title="Logout"
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_home_black_24dp">
+        </item>
+
+
+
+    </group>
+</menu>
