@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".FavouriteActivity">
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_height="wrap_content">
+        
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           
+           <ImageView
+               android:id="@+id/imgclg"
+               android:padding="@dimen/_10sdp"
+               android:layout_margin="@dimen/_10sdp"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:src="@drawable/download"/>
+           <TextView
+               android:id="@+id/txt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Campion International School"
+               android:layout_toRightOf="@id/imgclg"
+               android:textColor="@color/black"
+               android:textSize="14dp"
+               android:layout_marginTop="@dimen/_15sdp"/>
+           <View
+               android:id="@+id/view"
+               android:layout_width="120dp"
+               android:layout_height="2dp"
+               android:layout_marginTop="2dp"
+               android:background="@color/yellow"
+               android:layout_below="@id/txt"
+               android:layout_toRightOf="@id/imgclg"
+               android:layout_marginLeft="@dimen/_25sdp"
+               android:layout_centerHorizontal="true"/>
+
+
+               <LinearLayout
+                   android:id="@+id/lay"
+                   android:layout_marginTop="@dimen/_25sdp"
+                   android:layout_toRightOf="@id/imgclg"
+                   android:layout_below="@id/view"
+                   android:weightSum="2"
+                   android:orientation="horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:weightSum="4"
+                       android:layout_weight="1"
+                       android:orientation="vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="School"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="School Type"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Medium"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Location"/>
+
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:weightSum="4"
+                       android:layout_weight="1"
+                       android:orientation="vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text=": Government"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text=": Sr. Secondary"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Hindi"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Himachal Pradesh"/>
+
+
+                   </LinearLayout>
+
+
+
+               </LinearLayout>
+
+           <View
+               android:id="@+id/v_view"
+               android:layout_width="1dp"
+               android:layout_height="70dp"
+               android:layout_marginTop="@dimen/_25sdp"
+               android:background="@color/black"
+               android:layout_below="@id/txt"
+               android:layout_toRightOf="@id/lay"
+               android:layout_marginLeft="5dp"
+               android:layout_centerHorizontal="true"/>
+
+           <LinearLayout
+               android:layout_toRightOf="@id/v_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/txt"
+               android:layout_marginTop="@dimen/_25sdp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="10th"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   android:textSize="15dp"/>
+
+               <RatingBar
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:numStars="5"
+                   android:rating="3"
+                   android:padding="8dp"
+                   style="@style/Widget.AppCompat.RatingBar.Small"></RatingBar>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="compare"
+                   android:gravity="center"
+                   android:background="@color/yellow"
+                   android:padding="2dp"
+                   android:textAlignment="center"
+                   android:textColor="@color/black"
+                   android:layout_marginLeft="@dimen/_10sdp"
+                   android:layout_marginRight="@dimen/_10sdp"/>
+
+
+           </LinearLayout>
+
+           <View
+               android:id="@+id/h_view"
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:background="@color/black"
+               android:layout_below="@id/imgclg"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
+               android:layout_below="@id/h_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_gravity="center_horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:src="@drawable/ic_delete_black_24dp"/>
+           <TextView
+               android:textStyle="bold"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Remove"
+               android:textSize="18dp"
+               android:textColor="@color/black"/>
+
+           </LinearLayout>
+
+
+       </RelativeLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/card1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <ImageView
+               android:id="@+id/img"
+               android:padding="@dimen/_10sdp"
+               android:layout_margin="@dimen/_10sdp"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:src="@drawable/download"/>
+           <TextView
+               android:id="@+id/txtv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Sadu Chiru UJB School"
+               android:layout_toRightOf="@id/img"
+               android:textColor="@color/black"
+               android:textSize="14dp"
+               android:layout_marginTop="@dimen/_15sdp"/>
+           <View
+               android:id="@+id/view2"
+               android:layout_width="120dp"
+               android:layout_height="2dp"
+               android:layout_marginTop="2dp"
+               android:background="@color/yellow"
+               android:layout_below="@id/txtv"
+               android:layout_toRightOf="@id/img"
+               android:layout_marginLeft="@dimen/_25sdp"
+               android:layout_centerHorizontal="true"/>
+
+
+               <LinearLayout
+                   android:id="@+id/lay2"
+                   android:layout_marginTop="@dimen/_25sdp"
+                   android:layout_toRightOf="@id/img"
+                   android:layout_below="@id/view2"
+                   android:weightSum="2"
+                   android:orientation="horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:weightSum="4"
+                       android:layout_weight="1"
+                       android:orientation="vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="School"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="School Type"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Medium"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Location"/>
+
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:weightSum="4"
+                       android:layout_weight="1"
+                       android:orientation="vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text=": Government"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text=": Sr. Secondary"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Hindi"/>
+                       <TextView
+                           android:layout_weight="1"
+                           android:textSize="8dp"
+                           android:textColor="@color/black"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Himachal Pradesh"/>
+
+
+                   </LinearLayout>
+
+
+
+               </LinearLayout>
+
+           <View
+               android:id="@+id/v_view2"
+               android:layout_width="1dp"
+               android:layout_height="70dp"
+               android:layout_marginTop="@dimen/_25sdp"
+               android:background="@color/black"
+               android:layout_below="@id/txtv"
+               android:layout_toRightOf="@id/lay2"
+               android:layout_marginLeft="5dp"
+               android:layout_centerHorizontal="true"/>
+
+           <LinearLayout
+               android:layout_toRightOf="@id/v_view2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/txtv"
+               android:layout_marginTop="@dimen/_25sdp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="87th"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   android:textSize="15dp"/>
+
+               <RatingBar
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:numStars="5"
+                   android:rating="3"
+                   android:padding="8dp"
+                   style="@style/Widget.AppCompat.RatingBar.Small"></RatingBar>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="compare"
+                   android:gravity="center"
+                   android:background="@color/yellow"
+                   android:padding="2dp"
+                   android:textAlignment="center"
+                   android:textColor="@color/black"
+                   android:layout_marginLeft="@dimen/_10sdp"
+                   android:layout_marginRight="@dimen/_10sdp"/>
+
+
+           </LinearLayout>
+
+           <View
+               android:id="@+id/h_view2"
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:background="@color/black"
+               android:layout_below="@id/img"/>
+
+           <LinearLayout
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
+               android:layout_below="@id/h_view2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_gravity="center_horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:src="@drawable/ic_delete_black_24dp"/>
+               <TextView
+                   android:textStyle="bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Remove"
+                   android:textSize="18dp"
+                   android:textColor="@color/black"/>
+
+           </LinearLayout>
+
+
+       </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="2dp"
+        android:background="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Clear All"
+           android:paddingTop="@dimen/_5sdp"
+           android:paddingBottom="@dimen/_5sdp"
+           android:textColor="@color/white"
+           android:paddingLeft="@dimen/_30sdp"
+           android:paddingRight="@dimen/_30sdp"
+           android:background="@color/yellow"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
